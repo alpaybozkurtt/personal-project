@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Ones from "./ones";
 
 export default function Proje({ item, index }) {

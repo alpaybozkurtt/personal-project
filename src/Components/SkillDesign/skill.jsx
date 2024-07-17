@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Skill({ item, index }) {
     return (
       <>
