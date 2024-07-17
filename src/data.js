@@ -91,7 +91,7 @@ export const data = {
       footer: {
         text: "Bir sonraki ürününüzde birlikte çalışalım.",
         github: { text: "Github", link: "https://github.com/alpaybozkurtt" },
-        blog: { text: "Personal Blog", link: "https://example.com/blog" },
+        blog: { text: "Personal Blog", link: "https://personal-project-one-rho.vercel.app/" },
         linkedin: { text: "Linkedin", link: "https://linkedin.com/in/alpay-bozkurt-099990223" },
         email: { text: "Email", link: "mailto:av.alpaybozkurt@gmail.com" },
       },
@@ -188,7 +188,7 @@ export const data = {
       footer: {
         text: "Let’s work together on your next product.",
         github: { text: "Github", link: "https://github.com/alpaybozkurtt" },
-        blog: { text: "Personal Blog", link: "https://example.com/blog" },
+        blog: { text: "Personal Blog", link: "https://personal-project-one-rho.vercel.app/" },
         linkedin: { text: "Linkedin", link: "https://linkedin.com/in/alpay-bozkurt-099990223" },
         email: { text: "Email", link: "mailto:av.alpaybozkurt@gmail.com" },
       },
