@@ -28,7 +28,7 @@ export default function Proje({ item, index }) {
             View on Github
           </a>
           <a
-            href={item.link}
+            href={item.link2}
             className="text-[26.67px] font-semibold font-[Inter]"
           >
             Go to app →

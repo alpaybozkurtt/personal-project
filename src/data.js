@@ -66,6 +66,7 @@ export const data = {
             framework6: "Bootstrap",
           },
           link: "https://github.com/alpaybozkurtt/pizza-challenge",
+          link2: "https://pizza-challenge-lake.vercel.app/",
           picture:
             "https://raw.githubusercontent.com/alpaybozkurtt/pizza-challenge/main/Interfaces/Iteration-1/Home.png",
           background: "#DDEEFE",
@@ -83,6 +84,7 @@ export const data = {
             framework5: "Styled-Components",
           },
           link: "https://github.com/alpaybozkurtt/Netflix-Mockup",
+          link2: "https://netflix-mockup-silk.vercel.app/",
           picture: "https://i.imgur.com/S4dAvSM.png",
           background: "#D9F6F1",
           pcPicture: "https://i.hizliresim.com/uht999n.png",
@@ -163,6 +165,7 @@ export const data = {
             framework6: "Bootstrap",
           },
           link: "https://github.com/alpaybozkurtt/pizza-challenge",
+          link2: "https://pizza-challenge-lake.vercel.app/",
           picture:
             "https://raw.githubusercontent.com/alpaybozkurtt/pizza-challenge/main/Interfaces/Iteration-1/Home.png",
           background: "#DDEEFE",
@@ -180,6 +183,7 @@ export const data = {
             framework5: "Styled-Components",
           },
           link: "https://github.com/alpaybozkurtt/Netflix-Mockup",
+          link2: "https://netflix-mockup-silk.vercel.app/",
           picture: "https://i.imgur.com/S4dAvSM.png",
           background: "#D9F6F1",
           pcPicture: "https://i.hizliresim.com/uht999n.png",
