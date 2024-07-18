@@ -8,7 +8,7 @@ export default function Proje({ item, index }) {
     <>
       <div
         key={index}
-        className="w-[666.67px] h-[890.67px] rounded-[16px] flex flex-col pl-[53.33px] pr-[122.67px] pt-[61.33px] gap-[20px]"
+        className="w-[666.67px] h-[890.67px] rounded-[16px] flex flex-col pl-[53.33px] pr-[122.67px] pt-[61.33px] gap-[20px] "
         style={{ background: `${item.background}` }}
       >
         <h2 className="text-[38.67px] font-[playfair] font-bold">

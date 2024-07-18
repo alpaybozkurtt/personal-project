@@ -1,0 +1,22 @@
+@media (max-width: 720px) {
+    .skill_text {
+      font-size: 12px !important;
+    }
+
+    .skills_title {
+      font-size: 32px !important;
+    }
+
+    .skills_div {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      gap: 32px !important;
+    }
+
+    .all_skills {
+        height: 500px !important;
+        margin-bottom: 0 !important;
+    }
+
+  }

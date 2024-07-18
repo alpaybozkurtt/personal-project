@@ -18,3 +18,9 @@
 .clip-right-half {
   clip-path: inset(0 57.33px 0 0);
 }
+
+@media (max-width: 768px) {
+  .custom-shadow {
+    box-shadow: -1rem -1rem 0px #E92577;
+  }
+}

@@ -11,29 +11,36 @@ export default function Aboutme() {
   }
   return (
     <>
-      <div className="w-[100%] h-[41.125rem] flex justify-center mt-[76px] ">
-        <div className="flex w-[92.25rem] h-[35rem] justify-between">
-          <div className="text-[56px] h-[100%] flex flex-col justify-between">
-            <div className="w-[197.33px] h-[51.33px] bg-[#E92577] absolute z-[] mt-[130px] ml-[-22px] rounded-[5.33px]"></div>
+      <div className="w-[100%] h-[66.87vh] flex justify-center mt-[76px] max-md:mt-0 max-md:h-[45vh]">
+        <div className="flex w-[76.875vw] h-[35rem] justify-between max-md:flex-col max-md:items-center">
+          <div className="text-[56px] h-[100%] flex flex-col justify-between max-md:justify-center max-md:mt-[300px]">
+            <div className="w-[197.33px] h-[41.33px] bg-[#E92577] absolute mt-[130px] ml-[-22px] rounded-[5.33px] max-md:scale-[0.4] max-md:hidden"></div>
             <p
               className={
                 language == "english"
-                  ? "w-[888px] h-[342px] mb-[160px] z-[10]"
-                  : "w-[950px] h-[342px] mb-[160px] z-[10]"
+                  ? "w-[46.25vw] h-[34.756vh] mb-[8.333vw] z-[10] max-md:w-[100%] max-md:leading-5 max-md:h-[25vh]"
+                  : "w-[49.479vw] h-[34.756vh] mb-[8.333vw] z-[10] max-md:w-[100%] max-md:leading-5 max-md:h-[25vh]"
               }
             >
-              <span className="text-[40px]">{myData.about.paragraph1}</span>{" "}
-              <br /> <span>{myData.about.paragraph2}</span>
+              <span className="text-[40px] max-md:text-[20px]">
+                {myData.about.paragraph1}
+              </span>{" "}
+              <br />{" "}
+              <span className="max-md:text-[20px]">
+                {myData.about.paragraph2}
+              </span>
               <br />
-              <span>{myData.about.paragraph3}</span>
+              <span className="max-md:text-[20px]">
+                {myData.about.paragraph3}
+              </span>
             </p>
-            <div className="w-[165.33px] h-[78.67px] bg-[#E92577] absolute z-[99] rounded-l-[39.335px] right-0 mt-[525px]"></div>
+            <div className="w-[165.33px] h-[78.67px] bg-[#E92577] absolute z-[99] rounded-l-[39.335px] right-0 mt-[525px] max-md:scale-[0.4] max-md:hidden"></div>
             <div>
               <div className="flex flex-row gap-[1.6875rem] mb-[10px]">
-                <FaLinkedinIn className="w-[41.33px] h-[45.27px]" />
-                <FaGithub className="w-[45.33px] h-[48.19px]" />
+              <FaLinkedinIn className="w-[41.33px] h-[45.27px] max-md:scale-[0.5]" />
+              <FaGithub className="w-[45.33px] h-[48.19px] max-md:scale-[0.5]" />
               </div>
-              <div className="text-[24px]">
+              <div className="text-[24px] max-md:text-[12px]">
                 {language == "english" ? (
                   <>
                     {" "}
@@ -76,7 +83,7 @@ export default function Aboutme() {
           </div>
           <img
             src={myData.about.photo}
-            className=" w-[28.416875rem] h-[28.416875rem] object-cover rounded-[1.833125rem] mt-[76px] custom-shadow"
+            className=" w-[23.68vw] h-[23.68vw] min-w-[200px] min-h-[200px] object-cover rounded-[1.833125rem] mt-[76px] custom-shadow max-md:absolute"
           />
         </div>
       </div>

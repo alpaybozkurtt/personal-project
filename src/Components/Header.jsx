@@ -16,13 +16,13 @@ export default function Header() {
   };
 
   return (
-    <div className="font-bold text-[20px] font-[Inter] flex flex-row items-center w-[100%] justify-end pr-[11vw] ">
-      <Switch />
-      <p className="text-[#777777] px-[19px]">
+    <div className="font-bold text-[20px] font-[Inter] flex flex-row items-center w-[100%] justify-end pr-[11vw] max-md:text-[12px] max-md:pt-7 max-md:justify-center max-md:pl-8 ">
+      <Switch className="max-md:pl-[-10px]" />
+      <p className="text-[#777777] px-[19px] max-md:px-[12px]">
         {darkMode ? "LIGHT MODE" : "DARK MODE"}
       </p>
       <div className="bg-[#777777] w-[2px] h-[22px]  "></div>
-      <p className="text-[#777777] pl-[13px]">
+      <p className="text-[#777777] pl-[13px] max-md:px-[8px]">
         <button onClick={handleClick}>
           {language === "turkish" ? (
             <>
