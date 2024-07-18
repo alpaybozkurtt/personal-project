@@ -18,8 +18,8 @@ export default function Aboutme() {
             <p
               className={
                 language == "english"
-                  ? "w-[46.25vw] h-[34.756vh] mb-[8.333vw] z-[10] max-md:w-[100%] max-md:leading-5 max-md:h-[25vh]"
-                  : "w-[49.479vw] h-[34.756vh] mb-[8.333vw] z-[10] max-md:w-[100%] max-md:leading-5 max-md:h-[25vh]"
+                  ? "w-[46.25vw] h-[34.756vh] mb-[8.333vw] z-[10] max-md:w-[100%] max-md:leading-5 max-md:h-[25vh] dark:text-[#FFFFFF]"
+                  : "w-[49.479vw] h-[34.756vh] mb-[8.333vw] z-[10] max-md:w-[100%] max-md:leading-5 max-md:h-[25vh] dark:text-[#FFFFFF]"
               }
             >
               <span className="text-[40px] max-md:text-[20px]">
@@ -37,14 +37,14 @@ export default function Aboutme() {
             <div className="w-[165.33px] h-[78.67px] bg-[#E92577] absolute z-[99] rounded-l-[39.335px] right-0 mt-[525px] max-md:scale-[0.4] max-md:hidden"></div>
             <div>
               <div className="flex flex-row gap-[1.6875rem] mb-[10px]">
-              <FaLinkedinIn className="w-[41.33px] h-[45.27px] max-md:scale-[0.5]" />
-              <FaGithub className="w-[45.33px] h-[48.19px] max-md:scale-[0.5]" />
+              <FaLinkedinIn className="w-[41.33px] h-[45.27px] max-md:scale-[0.5] dark:text-[#D9D9D9]" />
+                <FaGithub className="w-[45.33px] h-[48.19px] max-md:scale-[0.5] dark:text-[#D9D9D9]" />
               </div>
               <div className="text-[24px] max-md:text-[12px]">
                 {language == "english" ? (
                   <>
                     {" "}
-                    <p>
+                    <p className="dark:text-[#FFFFFF]">
                       Currently{" "}
                       <span className="text-[#AF0C48]">Freelancing</span> for{" "}
                       <span className="text-[#AF0C48]">
@@ -52,7 +52,7 @@ export default function Aboutme() {
                       </span>{" "}
                       Project .
                     </p>{" "}
-                    <p>
+                    <p className="dark:text-[#FFFFFF]">
                       Invite me to join your team →{" "}
                       <span className="text-[#AF0C48]">
                         av.alpaybozkurt@gmail.com
@@ -61,7 +61,7 @@ export default function Aboutme() {
                   </>
                 ) : (
                   <>
-                    <p>
+                    <p className="dark:text-[#FFFFFF]">
                       Şu anda{" "}
                       <span className="text-[#AF0C48]">
                         UX, UI, & Web Tasarım
@@ -70,7 +70,7 @@ export default function Aboutme() {
                       <span className="text-[#AF0C48]">serbest</span>{" "}
                       çalışıyorum.
                     </p>{" "}
-                    <p>
+                    <p className="dark:text-[#FFFFFF]">
                       Beni ekibinize katılmaya davet edin →{" "}
                       <span className="text-[#AF0C48]">
                         av.alpaybozkurt@gmail.com

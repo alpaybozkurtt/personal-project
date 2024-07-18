@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import Aboutme from "./Components/AboutMe";
 import Header from "./Components/Header";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { dilAl, english, modeAl, turkish } from "./store/actions/actions";
 import Skills from "./Components/Skills";
 import Profile from "./Components/Profile";
@@ -14,6 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const dispatch = useDispatch();
   const mode = JSON.parse(localStorage.getItem("mode"));
+  const darkMode = useSelector((store) => store.darkMode);
 
 
   useEffect(() => {
@@ -42,15 +43,15 @@ function App() {
     });
   }, []);
   return (
-    <>
-      <div className="w-[100%] h-[984px] bg-[#F4F4F4] max-md:h-[85vh]">
+    <div className={darkMode ? "dark" : ""}>
+      <div className="w-[100%] h-[984px] bg-[#F4F4F4] max-md:h-[85vh] dark:bg-[#2A262B]">
         <div className="w-[100%] ">
-        <div className="w-[148px] h-[148px] bg-[#D9D9D9] rounded-full mt-[-60px] ml-[33.1vw] max-md:hidden"></div>
+        <div className="w-[148px] h-[148px] bg-[#D9D9D9] rounded-full mt-[-60px] ml-[33.1vw] max-md:hidden dark:bg-[#525252]"></div>
         </div>
         <Header />
         <Aboutme />
         <div className="w-[100%]">
-        <div className="w-[161.33px] h-[161.33px] bg-[transparent] border-[#D9D9D9] border-[28px] rounded-full ml-[70.3vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-92.665px] max-md:hidden"></div>
+        <div className="w-[161.33px] h-[161.33px] bg-[transparent] border-[#D9D9D9] border-[28px] rounded-full ml-[70.3vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-92.665px] max-md:hidden dark:border-[#525252]"></div>
         </div>
       </div>
       <Skills />
@@ -70,7 +71,7 @@ function App() {
       <div className="w-[366.67px] h-[24px] bg-[#82BBFF] absolute bottom-[337px] left-[693px] -z-[1] rounded-[5.33px] max-md:hidden"></div>
         <ToastContainer />
       </div>
-    </>
+      </div>
   );
 }
 

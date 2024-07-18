@@ -7,13 +7,13 @@ export default function Project() {
   console.log(myProject);
   return (
     <>
-      <div className="w-[100%] h-[1337.33px] flex flex-col items-center gap-[50px]">
+      <div className="w-[100%] h-[1337.33px] flex flex-col items-center gap-[50px] dark:bg-[#484148]">
         {language === "turkish" ? (
-          <h1 className="text-[48px] font-[Inter] font-medium mt-[103.67px] max-md:mt-0 max-md:mb-[-500px]">
+          <h1 className="text-[48px] font-[Inter] font-medium mt-[103.67px] max-md:mt-0 max-md:mb-[-500px] dark:text-[#FFFFFF]">
             Projelerim
           </h1>
         ) : (
-          <h1 className="text-[48px] font-[Inter] font-medium mt-[103.67px] max-md:mt-0 max-md:mb-[-500px]">
+          <h1 className="text-[48px] font-[Inter] font-medium mt-[103.67px] max-md:mt-0 max-md:mb-[-500px] dark:text-[#FFFFFF]">
             Projects
           </h1>
         )}

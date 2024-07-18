@@ -1,20 +1,24 @@
 /* eslint-disable react/prop-types */
+import { useSelector } from "react-redux";
 import Ones from "./ones";
 
 export default function Proje({ item, index }) {
   const libraries = Object.values(item.used);
+  const darkMode = useSelector((store) => store.darkMode);
 
   return (
     <>
       <div
         key={index}
         className="w-[666.67px] h-[890.67px] rounded-[16px] flex flex-col pl-[53.33px] pr-[122.67px] pt-[61.33px] gap-[20px] "
-        style={{ background: `${item.background}` }}
+        style={{ background: `${darkMode ? item.darkBack : item.background}` }}
       >
-        <h2 className="text-[38.67px] font-[playfair] font-bold">
+        <h2 className="text-[38.67px] font-[playfair] font-bold dark:text-[#FFFFFF]">
           {item.name}
         </h2>
-        <p className="text-[21.33px] font-[Inter] font-normal">{item.about}</p>
+        <p className="text-[21.33px] font-[Inter] font-normal dark:text-[#FFFFFF]">
+          {item.about}
+        </p>
         <div className="w-[70%] flex flex-row flex-wrap gap-[13.67px] ">
           {libraries.map((item, index) => {
             return <Ones key={index} item={item} index={index} />;
@@ -23,13 +27,13 @@ export default function Proje({ item, index }) {
         <div className="w-[100%] flex flex-row justify-between">
           <a
             href={item.link}
-            className="text-[26.67px] font-semibold font-[Inter]"
+            className="text-[26.67px] font-semibold font-[Inter] dark:text-[#FFFFFF]"
           >
             View on Github
           </a>
           <a
             href={item.link2}
-            className="text-[26.67px] font-semibold font-[Inter]"
+            className="text-[26.67px] font-semibold font-[Inter] dark:text-[#FFFFFF]"
           >
             Go to app →
           </a>
