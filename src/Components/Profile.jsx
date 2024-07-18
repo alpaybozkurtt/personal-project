@@ -6,7 +6,7 @@ export default function Profile() {
   return (
     <>
       <div>
-      <div className="w-[120px] h-[24px] bg-[#82BBFF] absolute ml-[987.33px] mt-[230.33px] rounded-[5.33px] max-md:hidden"></div>
+      <div className="w-[130px] h-[19px] bg-[#82BBFF] absolute ml-[987.33px] mt-[250.33px] rounded-[5.33px] max-md:hidden"></div>
         <div className="w-[100%] h-[73.984vh]  bg-[#F4F4F4] flex flex-col items-center justify-center max-md:w-[100vw] dark:bg-[#2A262B]">
           {dil == "english" ? (
             <h1 className="text-[48px] font-medium font-[Inter] pb-0 mb-[61px] max-md:mb-[-80px] dark:text-[#FFFFFF]">
